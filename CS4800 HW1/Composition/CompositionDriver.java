@@ -39,13 +39,15 @@ class Driver {
         sourceFiles.addItem(remoteFiles);
 
         php_demo1.print();
-        
+
         //For question 2:
-        /*php_demo1.delete(app);
+        /*System.out.println("\ndeleting \"app\" folder...\n");
+        php_demo1.delete(app);
         php_demo1.print(0);*/
 
         //For question 3:
-        /*php_demo1.delete(publiC);
+        /*System.out.println("\ndeleting \"public\" folder...\n");
+        php_demo1.delete(publiC);
         php_demo1.print();*/
 
     }   
