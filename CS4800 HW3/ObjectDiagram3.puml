@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+object "<u>php_demo1:Folder</u>" as php{
+name = "php_demo1"
+}
+object "<u>SourceFiles:Folder</u>" as SF{
+name = "Source Files"
+}
+object "<u>IncludePath:Folder</u>" as IP{
+name = "Include Path"
+}
+object "<u>RemoteFiles:Folder</u>" as RF{
+name = "Remote Files"
+}
+object "<u>.phalcon:Folder</u>" as PHA{
+name = ".phalcon"
+}
+object "<u>cache:Folder</u>" as CAC{
+name = "cache"
+}
+object "<u>public:Folder</u>" as PUB{
+name = "public"
+}
+object "<u>.htaccess:Folder</u>" as HTA{
+name = ".htaccess"
+}
+object "<u>.htrouter.php:Folder</u>" as HTR{
+name = ".htrouter.php"
+}
+object "<u>index.html:Folder</u>" as IND{
+name = "index.html"
+}
+
+
+
+
+php *--  SF
+php *-- IP
+php *-- RF
+
+SF *-- PHA
+SF *-- CAC
+SF *-- PUB
+
+PUB *-- HTA
+PUB *-- HTR
+PUB *-- IND
+
+@enduml

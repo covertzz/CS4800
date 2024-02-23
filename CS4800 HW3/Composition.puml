@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class File {
+- name: String
++ File(String name)
++ getName(): String
++ setName(String name): void
++ toString(): String
+}
+
+class Folder {
+- name: String
+- subfolders: ArrayList<Folder>
+- files: ArrayList<File>
++ Folder()
++ getName(): String
++ setName(String name): void
++ removeSubFolder(String subFolderName): void
++ addSubFolder(String subFolderName): void
++ getSubFolder(String subFolderName): Folder
++ removeFile(File file):boolean
++ addFile(String fileName): void
++ toString(): String
++ printFolderContents(): void
+}
+
+Folder *-- File : 0...*
+Folder *-- Folder : 0...*
+@enduml
