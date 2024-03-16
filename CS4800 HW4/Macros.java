@@ -69,8 +69,6 @@ class CarbFactory {
         int num = RandomGenerator.getInstance().getRandomNum(carbList.size());
         String carb = carbList.get(num);
 
-        System.out.println(carb);
-
         switch (carb) {
             case "Cheese":
                 return new Cheese();
